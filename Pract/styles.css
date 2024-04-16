@@ -1,0 +1,207 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 87px;
+    background-color: #FFFFFF; /* Example color */
+    padding: 0 20px; /* Add some padding for spacing */
+    box-shadow: 0px 4px 24.3px 0px #0000001A;
+    z-index: 1;
+}
+
+.navigation .logo {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #353434;
+    position: absolute; /* Position the logo absolutely */
+    left: 50%; /* Move the logo to the center horizontally */
+    transform: translateX(-50%); /* Adjust the position to the left by half of its own width */
+}
+
+.navigation .nav-links {
+    display: flex;
+}
+
+.navigation .nav-links a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: #3E3A2C;
+    text-decoration: none;
+    margin-right: 20px; /* Add some spacing between links */
+}
+
+.navigation .user-actions {
+    display: flex;
+}
+
+.navigation .user-actions a {
+    color: #3E3A2C;
+    text-decoration: none;
+    margin-right: 10px; /* Add some spacing between links */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height:860px;
+}
+
+.left-col, .right-col {
+    width: 100%;
+    height: 860px;
+}
+
+.left-col {
+    background-image: url("img/bg_login.png");
+    height: 100%; 
+    background-size: 100%;
+    background-position:top;
+
+}
+
+.right-col {
+    background-color: #FFFFFF; 
+}
+
+.login-content {
+    position: absolute;
+    width: 27%;
+    height: 47px;
+    top: 201px;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    color:  #353434; /* Text color */
+    z-index: 0; 
+}
+.login-form {
+    position: absolute;
+    width: 368px;
+    height: 70px;
+    top: 302px;
+    left: 899px;
+    gap: 0px;
+}
+
+.login-form input[type="email"] {
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Add padding to improve input field appearance */
+    border: 0px; /* Remove default input field border */
+    border-bottom: 1px solid #000000; /* Add bottom border */
+    opacity: 1; /* Set opacity to make input field visible */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000; /* Set text color */
+    background-color: transparent; /* Make input background transparent */
+}
+.login-form input[type="password"] {
+    width: 368px;
+    height: 49px;
+    top: 395px;
+    left: 899px;
+    gap: 0px;
+    border: 0px;
+    border-bottom: 1px solid #000000;
+    opacity: 1;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px;
+}
+.forgot-password {
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+    color: #353434;
+    text-decoration: none;
+    position: absolute;
+    top: 125px; /* Adjust top position */
+    left: 215px; /* Adjust left position */
+    width: 184px;
+    height: 23px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+.login-button {
+    width: 200px;
+    height: 53px;
+    position: absolute;
+    top: 200px; /* Adjusted top position to make it lower */
+    left: 50%; /* Adjusted left position to center horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    padding: 15px 30px;
+    gap: 10px;
+    background: #F5ECE4;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #353434;
+}
+
+.login-button:hover {
+    background: #F2E3D9; /* Change background color on hover */
+}
+
+.create-account-text {
+    width: 528px;
+    height: 21px;
+    position: absolute;
+    top: 379px; /* Adjusted top position to make it lower */
+    left: calc(50% - 183px); /* Centered the text horizontally */
+    gap: 0px;
+    opacity: 1;
+    color: #353434;
+}
+.create-account-link {
+    cursor: pointer; /* Add pointer cursor to indicate clickable */
+}
+
+.create-account-link:hover,
+.create-account-link:active {
+    text-decoration: underline; /* Add underline on hover and click */
+}
+
+.register-left-col {
+    background-image: url("img/bg_register.png");
+    height: 100%; 
+    background-size: 100%;
+    background-position:top;
+
+}
+
+.footer {
+    width: 100%;
+    height: 358px;
+    background: #483B2B;
+
+}
+
